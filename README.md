@@ -1,0 +1,17 @@
+```python
+new_migration(
+    setting=Setting(
+        migration_table="migratory",
+        migration_folder="migrations",
+        database_uri="crate://localhost:4200",
+    ),
+    message="t2",
+)
+upgrade(
+    setting=Setting(
+        migration_table="migratory",
+        migration_folder="migrations",
+        database_uri="crate://localhost:4200",
+    ),
+)
+```
